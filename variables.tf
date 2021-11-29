@@ -25,7 +25,7 @@ variable "tags" {
 variable "peer_dns_resolution" {
   description = "Indicates whether a local VPC can resolve public DNS hostnames to private IP addresses when queried from instances in a peer VPC"
   type        = bool
-  default     = false
+  default     = true
 }
 
 variable "peer_link_to_peer_classic" {
@@ -43,7 +43,7 @@ variable "peer_link_to_local_classic" {
 variable "this_dns_resolution" {
   description = "Indicates whether a local VPC can resolve public DNS hostnames to private IP addresses when queried from instances in a this VPC"
   type        = bool
-  default     = false
+  default     = true
 }
 
 variable "this_link_to_peer_classic" {
